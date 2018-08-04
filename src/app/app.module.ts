@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { GithubComponent } from './github/github.component';
 import {MatCardModule} from '@angular/material/card';
 import { MenuofthedayComponent } from './menuoftheday/menuoftheday.component';
+import { AddmenuComponent } from './addmenu/addmenu.component';
+import { FormsModule }   from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     GithubComponent,
-    MenuofthedayComponent
+    MenuofthedayComponent,
+    AddmenuComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    MatCardModule
+    MatCardModule,
+    FormsModule
   ],
   providers: [HttpClientModule],
   bootstrap: [AppComponent]
