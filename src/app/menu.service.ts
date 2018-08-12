@@ -13,7 +13,7 @@ export class MenuService {
   fetchMenuDetails()
   {
 
-  return this.http.get('http://192.168.1.11:5000/getMenuDetails/')
+  return this.http.get('http://192.168.1.103:5000/getMenuDetails/')
 
   }
   addMenuDetails()

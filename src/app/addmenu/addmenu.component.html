@@ -6,13 +6,20 @@
   </font>
 <form #menuform="ngForm" (ngSubmit)="postDataToRestaurentMenu(menuform.value)"> 
 <font color="black">
+  <div class="form-group">
     <label>Item Name</label>
-    <input type="text" class="form-control" name="itemname" ngModel>
-     <br>
+    <input  minlength="4" required type="text" #nameRef="ngModel" class="form-control" name="itemname" ngModel>
+    {{nameRef.className}} 
+  <div [hidden]="nameRef.valid || nameRef.pristine" class="alert alert-danger">
+      please enter a name
+  </div>
+    
+  </div>
+    <br>
      <br>
      <br>
     <label>Price</label>
-    <input type="text" class="form-control"  name="price" ngModel>
+    <input type="text" required class="form-control"  name="price" ngModel>
    <br>
    <br>
    <br>
@@ -21,6 +28,7 @@
      <br>
      <br>
      <br>
+     
     
     <br>
 </font>

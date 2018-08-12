@@ -3,7 +3,7 @@ import {MenuService} from '..//menu.service'
 @Component({
   selector: 'app-addmenu',
   templateUrl: './addmenu.component.html',
-  styleUrls: ['./addmenu.component.css']
+  styles: ['input.ng-valid{border-left:5px solid green;}input.ng-invalid {border-left:5px  solid red}']
 })
 export class AddmenuComponent implements OnInit {
 
